@@ -74,6 +74,7 @@ body{
     padding-bottom: 1em;
     padding-right: 2em;
     padding-left: 2em;
+    font-size: 100%;
 }
 .subwrite{
     border:solid 1px rgb(175, 105, 255);
