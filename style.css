@@ -13,7 +13,8 @@ html
     background-image: url(back.png);
     background-attachment: fixed;
 
-            
+    text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
 }
 body{
     background: black;
