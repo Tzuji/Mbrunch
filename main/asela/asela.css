@@ -8,6 +8,9 @@ html
 
     background-image: url(../../back.png);
     background-attachment: fixed;
+
+     text-size-adjust:100%;
+ -webkit-text-size-adjust:100%;
 }
 body{
     margin: 7%;
@@ -45,7 +48,6 @@ body{
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: black;
-    font-size: 16px;
 }
 
 .name{
@@ -75,7 +77,6 @@ body{
     padding-bottom: 1em;
     padding-right: 2em;
     padding-left: 2em;
-    font-size: 16px;
 }
 .subwrite{
     border:solid 1px rgb(175, 105, 255);
