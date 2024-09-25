@@ -54,10 +54,12 @@ a{
     cursor: none;
 }
 img{
-    padding: 0;
-    width: 250px;
+    width: 150px;
     height: auto;
     cursor: none;
+}
+.name{
+    text-align: center;
 }
 .tip{
     position: relative;
