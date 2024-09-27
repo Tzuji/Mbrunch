@@ -38,7 +38,7 @@ body{
     background-image: url(cursor.PNG);
     border-radius: 50%;
     transform: translate(0,0);
-    transition: transform 0.2s; 
+    transition: transform 0.1s; 
     transition-timing-function: ease-out;
     z-index: 999;
 }
@@ -75,7 +75,7 @@ img{
 .subtext {
     cursor: none;
     
-    transition: .5s;    
+    transition: .2s;    
     z-index: -1;        
     opacity: 0;         
     min-width: 10em;    
@@ -83,10 +83,10 @@ img{
     position: absolute;
     left: 0;
     bottom: 0%;
-    padding: 10%;
+    padding: 5%;
     margin-bottom: 0.5em;
 
-    font-size: 1em;        
+    font-size: 0.8em;        
     border:solid 1px #fff0f0;   
     background-color: rgba(0, 0, 0, 0.8); 
 }
@@ -101,6 +101,7 @@ img{
     z-index: 0;    
     opacity: .96;  
 }
+
 .nul{
     background-color: white;
 }
