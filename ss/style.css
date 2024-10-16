@@ -1,0 +1,131 @@
+html
+{
+    color: rgb(255, 255, 255);
+    min-height: 100%;
+
+    cursor: none;
+
+    font-family: "Consolas","DotGothic16", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 16px;
+
+    background-image: url(../back.png);
+    background-attachment: fixed;
+
+    text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
+}
+body{
+    background: black;
+    margin: 5%;
+    padding: 1em;
+
+    text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
+}
+#main{
+    margin: 2em;
+    }
+
+#cursor {
+    pointer-events: none;
+    position: fixed;
+    top: -8px;    
+    left: -8px;   
+    width: 35px;  
+    height: 35px;  
+    background-image: url(../cursor.PNG);
+    border-radius: 50%;
+    transform: translate(0,0);
+    transition: transform 0.1s; 
+    transition-timing-function: ease-out;
+    z-index: 999;
+}
+a{
+    cursor: none;
+}
+#titleA{
+    font-size: 0.8em;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding: 10px;
+    cursor: none;
+}
+img{
+    padding: 15px;
+    cursor: none;
+}
+.name{
+    text-align: center;
+    margin: 3%;
+    margin-top: 5px;
+    cursor: none;
+}
+.tip{
+    position: relative;
+    cursor: help;      
+    color: white;
+}
+.subtext {
+    cursor: none;
+    
+    transition: .2s;    
+    z-index: -1;        
+    opacity: 0;         
+    min-width: 10em;    
+
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    padding: 5%;
+    margin-bottom: 0.5em;
+
+    font-size: 0.8em;        
+    border:solid 1px #fff0f0;   
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+.subtext::after {
+    content: "";  
+
+    position: absolute;
+    left: 25%;
+    bottom: -1em;
+}
+.tip:hover .subtext {
+    z-index: 0;    
+    opacity: .96;  
+}
+
+.nul{
+    background-color: white;
+}
+.top:link {
+    color: white;
+}
+.top:visited {
+color: white;
+}
+.top:active {
+color: white;
+}
+.top{
+    transition: .3s;
+    &:hover{
+        transform: scale(0.95);
+    }
+}
+.push{
+    
+    transition: .0.5s;
+    &:hover{
+        transform: scale(0.95);
+    }
+}
+#backpage{
+    padding: 2%;
+}
