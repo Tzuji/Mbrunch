@@ -6,7 +6,7 @@ function typeing(){
     if(typeText.innerHTML == 0){
         text = "Welcome to M-███ brunch~ ^^/";
     }else if(typeText.innerHTML == 1){
-        text = "My Employees"
+        text = "🥩 My Employees 🥩"
     }else if(typeText.innerHTML == 2){
         text = "Records :)"
     }
