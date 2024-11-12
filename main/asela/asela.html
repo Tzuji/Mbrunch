@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="asela.css">
+        <link rel="icon" href="../../enk.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
+        <title>Asela</title>
+    </head>
+    <body>
+        <div id="tab" style="width: 150px; color: black;">Asela</div>
+        <div id="cursor"></div>
+
+        <div id="border">
+            <div class="main">
+                
+                <div class="flex">
+                    <div>
+                        <div class="name">Asela</div>
+                        <div class="flex">
+                            <p class="border" style="border-right: none;">冷血な英雄</p>
+                            <p class="border" style="border-right: none;">██年 <span class="nul">12</span>月 
+                                <span class="nul">31</span>日生 (満 <span class="nul">25</span>歳)</p>
+                            <p class="border">性別 ██</p>
+                        </div>
+                        <div class="flex">
+                            <p class="border" style="width: 50%; border-right: none; margin-top: 0;">出身地 █████</p>
+                            <p class="border" style="margin-top: 0;">身長 <span class="nul">185</span>cm</p>
+                        </div>
+                    </div>
+                    <img id="emp" src="asela.png" alt="">
+                </div>
+                
+                <div class="mainwtite">
+                    <p>表情が乏しく冷淡な発言や行動を取る.本人が明確な悪意を持ってではなく共感性が著しく欠如していることからくる.あまり話が通じない.大抵孤立している.<br>
+                        ギフトを貰いやすく管理人の命令に対し従順.能力が高く作業鎮圧に頻繁に駆り出されている.勤務中は頼られる一方で日常生活が壊滅的.不器用.台所出禁.
+                        <br>黄昏EGOに変わってから何かを生き急いでいるように見えるようになった.</td>
+                    </p>
+                </div>
+                <div class="subwrite" style="border-top: none;">
+                    <div class="flex">
+                        <span>‣　</span>
+                        <span><a class="mao" href="../mao/mao.html">Mao</a>と同期.よくちょっかいかけられてるので鬱陶しく感じている.実際のところ他職員よりは多少使える程度にしか思っていない.</span>
+                    </div>
+                    <div class="flex">
+                        <span>‣　</span>
+                        <span><a class="diva" href="../diva/diva.html">Diva</a>の事はお節介な後輩だと思っている.正直面倒な相手である.</span>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <table border="1">
+                        <tr >
+                            <td style="border-right: solid 1px;">Infomation Team</td>
+                            <td style="border-right: solid 1px;">Red Eyes</td>
+                            <td>Ⅱ</td>
+                        </tr>
+                        <tr>
+                            <td style="border-right: solid 1px;">Central Team</td>
+                            <td style="border-right: solid 1px;">Magic Bullet +<br>The Sword Sharpened with Tears</td>
+                            <td>Ⅳ</td>
+                        </tr>
+                        <tr>
+                            <td style="border-right: solid 1px;">Recording Team</td>
+                            <td style="border-right: solid 1px;">Twilight</td>
+                            <td>Ⅴ</td>
+                        </tr>
+                    </table>
+                    <p>　</p>
+                    <table border="1">
+                        <tr>
+                            <td style="border: solid 1px;">備考</td>
+                            <td>痛覚麻痺<br>倫理観・共感性の欠如</td>
+                        </tr>
+                    </table>
+                </div>
+                    <br>
+                    <div class="subwrite">
+                        <div class="flex">
+                            <span>⚠　</span>
+                            <span>L社で<span class="nul">殉職</span>することを望んでいます.</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="subwrite">
+                        <form name="EmpForm">
+                            <textarea name="tex" placeholder="sample voice!" cols="35" rows="3" style="font-family: 'Consolas','DotGothic16', sans-serif; 
+                            background-color: white; color: black; font-size: 14px; cursor: none;"></textarea>
+                            <input type="button" value="click!" onclick="voice()" style="cursor: none; font-family: 'Consolas','DotGothic16', sans-serif; background-color: orange; color: white; padding: 10px;">
+                        </form><br>
+                        <form name="EmpForm2">
+                            　　　　　
+                            <textarea name="tex2" placeholder="sample voice!" cols="35" rows="3" style="font-family: 'Consolas','DotGothic16', sans-serif; 
+                            background-color: white; color: black; font-size: 14px; cursor: none;"></textarea>
+                            <input type="button" value="click!" onclick="voice2()" style="cursor: none; font-family: 'Consolas','DotGothic16', sans-serif; background-color: orange; color: white; padding: 10px;">
+                        </form>
+                    </div>
+                    <br>
+
+                    <div class="flex">
+                        <details>
+                            <summary> EGO</summary>
+                            <!--EGO着せ替え、誤字見落としで二日悩んだので悔しい-->
+                                <div class="flex" style="border: 1px solid rgb(175, 105, 255); padding-right: 10px; background-color: rgb(175, 105, 255,0.1);">
+                                    <div id="ego"></div>
+                                        <div >
+                                            <br>
+                                            <div class="button" onclick="ego1()">Suit</div>
+                                            <div class="button" onclick="ego2()">Magic Bullet</div>
+                                            <div class="button" onclick="ego3()">Twilight</div>
+                                            <br><br>
+                                            <div class="button" onclick="condition()">*gift</div>
+                                        </div>
+                                </div>
+                        </details>
+                    </div>
+                    
+            </div>
+            <br>
+
+            <br>
+            <div id="backpage">
+                <a class="asela" href="../../index.html">--Top page</a>
+                <img src="asela.gif" alt="">
+                <a href="../mao/mao.html"><img src="../mao/mao.gif" alt=""></a>
+                <a href="../diva/diva.html"><img src="../diva/diva.gif" alt=""></a>
+                <a href="../emilia/emilia.html"><img src="../emilia/emilia.gif" alt=""></a>
+                <a href="../miho/miho.html"><img src="../miho/miho.gif" alt=""></a>
+            </div>
+            
+        </div>
+
+        <script src="../../main.js"></script>
+        <script src="../change.js"></script>
+        <script src="voice.js"></script>
+
+    </body>
+</html>
