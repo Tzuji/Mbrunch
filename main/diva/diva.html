@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="diva.css">
+        <link rel="icon" href="../../enk.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
+        <title>Diva</title>
+    </head>
+    <body>
+        <div id="tab" style="width: 150px; color: black;">Diva</div>
+        <div id="cursor"></div>
+
+        <div id="border">
+            <div class="main">
+                <div class="flex">
+                    <div>
+                        <div class="name">Diva</div>
+                        <div class="flex">
+                            <p class="border" style="border-right: none;">謙虚な哲学者</p>
+                            <p class="border" style="border-right: none;">██年 <span class="nul">3</span>月 
+                                <span class="nul">13</span>日生 (満 <span class="nul">21</span>歳)</p>
+                            <p class="border">性別 ██</p>
+                        </div>
+                        <div class="flex">
+                            <p class="border" style="width: 50%; border-right: none; margin-top: 0;">出身地 █████</p>
+                            <p class="border" style="margin-top: 0;">身長 <span class="nul">170</span>cm</p>
+                        </div>
+                    </div>
+                    <img id="emp" src="diva.png" alt="">
+                </div>
+
+                <div class="mainwtite">
+                    <p>繊細で真面目な職員.周りに振り回されがちな苦労人でもある.自殺未遂も含め運が良いのか悪いのか生き残ることが多い.<ruby>T-02-99<rt>空虚な夢</rt></ruby>の脱走以降趣味が睡眠と化した.<br>
+                    目の前で職員が死んだショックで死に過敏になっており,その記憶自体は頭から抜けている.<br>
+                    頻繁に現実のような夢を見るためTT2に違和感を覚えているが周りが何も反応を示さないため自分がおかしくなったと思っている.</td>
+                </p>
+                </div>
+                <div class="subwrite" style="border-top: none;">
+                    <div class="flex">
+                        <span>‣　</span>
+                        <span>優しくしてくれる<a class="mao" href="../mao/mao.html">Mao</a>に頼りがち.良い人…だよね？<br></span>
+                    </div>
+                    <div class="flex">
+                        <span>‣　</span>
+                        <span>自暴自棄気味な<a class="asela" href="../asela/asela.html">Asela</a>が放っておけなくなっている.しかし考えてることが分からず少し怖い.</span>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <table border="1">
+                        <tr >
+                            <td style="border-right: solid 1px;">Training Team</td>
+                            <td style="border-right: solid 1px;">Frost Splinter</td>
+                            <td>Ⅰ</td>
+                        </tr>
+                        <tr>
+                            <td style="border-right: solid 1px;">Central Team</td>
+                            <td style="border-right: solid 1px;">Frost Splinter + Laetitia</td>
+                            <td>Ⅲ</td>
+                        </tr>
+                        <tr>
+                            <td style="border-right: solid 1px;">Recording Team</td>
+                            <td style="border-right: solid 1px;">Sound of a Star</td>
+                            <td>Ⅴ</td>
+                        </tr>
+                    </table>
+                    <p>　</p>
+                    <table border="1">
+                        <tr>
+                            <td style="border: solid 1px;">備考</td>
+                            <td><span class="nul">記憶障害?</span></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <br>
+                <div class="subwrite">
+                    <div class="flex">
+                        <span>⚠　</span>
+                        <span>TT2についての不明瞭な情報を拡散しないでください.</span>
+                    </div>
+                </div>
+                <br>
+                <div class="subwrite">
+                    <form name="EmpForm">
+                        <textarea name="tex" placeholder="sample voice!" cols="35" rows="3" style="font-family: 'Consolas','DotGothic16', sans-serif; 
+                        background-color: white; color: black; font-size: 14px; cursor: none;"></textarea>
+                        <input type="button" value="click!" onclick="voice()" style="cursor: none; font-family: 'Consolas','DotGothic16', sans-serif; background-color: orange; color: white; padding: 10px;">
+                    </form><br>
+                    <form name="EmpForm2">
+                        　　　　　
+                        <textarea name="tex2" placeholder="sample voice!" cols="35" rows="3" style="font-family: 'Consolas','DotGothic16', sans-serif; 
+                        background-color: white; color: black; font-size: 14px; cursor: none;"></textarea>
+                        <input type="button" value="click!" onclick="voice2()" style="cursor: none; font-family: 'Consolas','DotGothic16', sans-serif; background-color: orange; color: white; padding: 10px;">
+                    </form>
+                </div>
+                <br>
+                
+                <div class="flex">
+                    <details>
+                        <summary> EGO</summary>
+
+                            <div class="flex" style="border: 1px solid rgb(27, 238, 245); padding-right: 10px; background-color: rgb(27, 238, 245,0.1);">
+                                <div id="ego"></div>
+                                    <div>
+                                        <br>
+                                        <div class="button" onclick="ego1()">Suit</div>
+                                        <div class="button" onclick="ego2()">Frost Splinter</div>
+                                        <div class="button" onclick="ego3()">Sound of a Star</div>
+                                        <br><br>
+                                        <div class="button" onclick="condition()">*gift</div>
+                                    </div>
+                            </div>
+                            <div id="test" style="color: rgb(41, 41, 41); "></div>
+                    </details>
+                </div>
+            </div>
+
+            <img src="touch/1.png" onmouseover="this.src='touch/2.png'" onmouseout="this.src='touch/1.png'"><br>
+            
+            <div id="backpage">
+                <a class="diva" href="../../emp.html">--Employees page</a>
+                <a href="../asela/asela.html"><img src="../asela/asela.gif" alt=""></a>
+                <a href="../mao/mao.html"><img src="../mao/mao.gif" alt=""></a>
+                <img src="diva.gif" alt="">
+                <a href="../emilia/emilia.html"><img src="../emilia/emilia.gif" alt=""></a>
+                <a href="../miho/miho.html"><img src="../miho/miho.gif" alt=""></a>
+            </div>
+        </div>
+         
+        <script src="../../main.js"></script>
+        <script src="../change.js"></script>
+        <script src="voice.js"></script>
+    </body>
+</html>
