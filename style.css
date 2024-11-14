@@ -191,3 +191,8 @@ color: white;
         transform: scale(0.95);
     }
 }
+
+.d{
+    width: 50px;
+    margin: 0 auto;
+}
