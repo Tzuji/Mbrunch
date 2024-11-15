@@ -6,6 +6,7 @@ html
     font-size: 16px;
     cursor: none;
 
+    background-color: black;
     background-image: url(meet2.jpg);
     background-size:15em;
     background-attachment: fixed;
