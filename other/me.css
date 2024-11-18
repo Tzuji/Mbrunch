@@ -3,7 +3,7 @@ html
     color: rgb(255, 255, 255);
     min-height: 100%;
     background: black;
-    cursor: none;
+    cursor: url(../cursor.png), auto;
 
     font-family: "Consolas","DotGothic16", sans-serif;
     font-weight: 400;
@@ -29,7 +29,7 @@ body{
     left: -8px;   
     width: 35px;  
     height: 35px;  
-    background-image: url(../cursor.PNG);
+    background-image: url(../);
     border-radius: 50%;
     transform: translate(0,0);
     transition: transform 0.2s; 
@@ -41,7 +41,6 @@ body{
     display: flex;
     align-items: center;
     padding: 5px;
-    cursor: none;
 }
 #me{
     padding: 5px;
@@ -58,9 +57,7 @@ img{
 #backpage{
     padding: 2%;
 }
-a{
-    cursor: none;
-}
+
 .top:link {
     color: white;
 }
@@ -75,4 +72,7 @@ color: white;
     &:hover{
         transform: scale(0.95);
     }
+}
+a{
+    cursor: url(../cursor.png), auto;
 }
