@@ -3,7 +3,7 @@ html
     color: rgb(255, 255, 255);
     min-height: 100%;
 
-    cursor: none;
+    cursor: url(cursor.png), auto;
 
     font-family: "Consolas","DotGothic16", sans-serif;
     font-weight: 400;
@@ -38,6 +38,8 @@ body{
     border-top-right-radius: 20px;
     margin-right: 5px;
     text-decoration: none;
+
+    cursor: url(cursor.png), auto;
     
     position: relative;
     top: 10px;
@@ -93,16 +95,16 @@ color: white;
     left: -8px;   
     width: 35px;  
     height: 35px;  
-    background-image: url(cursor.PNG);
+    background-image: url();
     border-radius: 50%;
     transform: translate(0,0);
-    transition: transform 0.1s; 
+    transition: transform 1.0s;
     transition-timing-function: ease-out;
     z-index: 999;
 }
 a{
     text-decoration: none;
-    cursor: none;
+    cursor: url(cursor.png), auto;
 }
 #titleA{
     font-size: 0.8em;
@@ -113,31 +115,28 @@ a{
     flex-wrap: wrap;
 
     padding: 0px;
-    cursor: none;
 }
 img{
     width: 200px;
     height: auto;
-    cursor: none;
 }
 .name{
     text-align: center;
     margin: 3%;
     margin-top: 5px;
-    cursor: none;
 }
 .tip{
     position: relative;
     cursor: help;      
     color: white;
+    cursor: url(cursor.png), auto;
 }
 .subtext {
-    cursor: none;
-    
     transition: .2s;    
     z-index: -1;        
     opacity: 0;         
-    min-width: 10em;    
+    min-width: 10em;
+    cursor: url(cursor.png), auto;
 
     position: absolute;
     left: 0;
@@ -186,7 +185,7 @@ color: white;
     }
 }
 .push{
-    
+    cursor: url(cursor.png), auto;
     transition: .0.5s;
     &:hover{
         transform: scale(0.95);
