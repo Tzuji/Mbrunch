@@ -152,6 +152,10 @@ color: rgb(175, 105, 255);
 .asela:active {
 color: rgb(175, 105, 255);
 }
+.asela:hover{
+    position: relative;
+    bottom:3px
+}
 .diva:link {
     color: rgb(27, 238, 245);
 }
@@ -161,6 +165,10 @@ color: rgb(27, 238, 245);
 .diva:active {
 color: rgb(27, 238, 245);
 }
+.diva:hover{
+    position: relative;
+    bottom:3px
+}
 .mao:link {
     color: rgb(255, 0, 221);
 }
@@ -169,6 +177,10 @@ color: rgb(255, 0, 221);
 }
 .mao:active {
 color: rgb(255, 0, 221);
+}
+.mao:hover{
+    position: relative;
+    bottom:3px
 }
 .nul{
     background-color: rgb(255, 0, 221);
