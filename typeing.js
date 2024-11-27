@@ -9,6 +9,8 @@ function typeing(){
         text = "🥩 My Employees 🥩"
     }else if(typeText.innerHTML == 2){
         text = "Records :)"
+    }else if(typeText.innerHTML == 3){
+        text = "📨"
     }
 
     typeText.textContent = text.slice(0,count);
