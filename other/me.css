@@ -70,7 +70,8 @@ color: white;
 .top{
     transition: .3s;
     &:hover{
-        transform: scale(0.95);
+        position: relative;
+        bottom:3px
     }
 }
 a{
