@@ -159,6 +159,10 @@ color: white;
 }
 .top{
     text-decoration: underline;
+    &:hover{
+        position: relative;
+        bottom:3px
+    }
 }
 .push{
     cursor: url(cursor.png), auto;
@@ -167,7 +171,6 @@ color: white;
         transform: scale(0.95);
     }
 }
-
 .d{
     width: 50px;
     margin: 0 auto;
