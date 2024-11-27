@@ -19,8 +19,6 @@ html
     -moz-transform: scale(0.5);
 }
 body{
-    text-size-adjust:100%;
-    -webkit-text-size-adjust:100%;
     margin: auto;
     width: 47em;
 }
