@@ -153,6 +153,10 @@ color: rgb(0, 255, 85);
 .miho:active {
 color: rgb(0, 255, 85);
 }
+.miho:hover{
+    position: relative;
+    bottom:3px
+}
 .mao:link {
     color: rgb(255, 0, 221);
 }
@@ -162,14 +166,22 @@ color: rgb(255, 0, 221);
 .mao:active {
 color: rgb(255, 0, 221);
 }
+.mao:hover{
+    position: relative;
+    bottom:3px
+}
 .emilia:link {
     color: lightgrey;
 }
 .emilia:visited {
 color: lightgrey;
 }
-.diva:active {
+.emilia:active {
 color: lightgrey;
+}
+.emilia:hover{
+    position: relative;
+    bottom:3px
 }
 .nul{
     background-color: lightgrey;
