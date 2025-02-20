@@ -16,6 +16,13 @@ html
 
     text-size-adjust:100%;
     -webkit-text-size-adjust:100%;
+
+    &::-webkit-scrollbar{
+        display: none;
+      }
+    -ms-overflow-style: none;
+    overflow: scroll;
+    scrollbar-width: none;
 }
 body{
     margin: auto;
@@ -27,8 +34,16 @@ body{
     margin-right: 1em;
     border: white solid 1px;
     overflow-y: scroll;
-    scrollbar-color: black white;
-    scrollbar-width: thin;
+    
+    &::-webkit-scrollbar {
+        width: 10px;
+        background-color: white;
+      }
+    &::-webkit-scrollbar-thumb {
+        background-color: black;
+        border: 3px groove black;
+        background-size: cover;
+    }
 
     position: relative;
     z-index: 20;
@@ -38,14 +53,21 @@ body{
     margin-left: 1em;
     margin-right: 1em;
     padding: 1em;
+    font-size: 12px;
     border: white solid 1px;
     overflow-y: scroll;
-    scrollbar-color: black white;
-    scrollbar-width: thin;
 
-    position: relative;
-    z-index: 20;
+    &::-webkit-scrollbar {
+        width: 10px;
+        background-color: white;
+      }
+    &::-webkit-scrollbar-thumb {
+        background-color: black;
+        border: 3px groove black;
+        background-size: cover;
+    }
 }
+
 .smallBar{
     margin-left: 1em;
     padding-left: 0.2em;
