@@ -11,7 +11,7 @@ html
     font-size: 16px;
 
     background-color: black;
-    background-image: url(back.png);
+    background-image: url(.png);
     background-attachment: fixed;
 
     text-size-adjust:100%;
@@ -152,11 +152,9 @@ a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
-img{
-    width: 200px;
-    height: auto;
-}
+
 .name{
     text-align: center;
     margin: 3%;
@@ -216,15 +214,12 @@ color: white;
     }
 }
 .push{
+    width: 200px;
     cursor: url(cursor.png), auto;
     transition: .0.5s;
     &:hover{
         transform: scale(0.95);
     }
-}
-.d{
-    width: 50px;
-    margin: 0 auto;
 }
 
 .gif{
