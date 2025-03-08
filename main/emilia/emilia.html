@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="emilia.css">
+        <link rel="stylesheet" href="../../particle/particlestyle.css">
+        <link rel="stylesheet" href="../../allstyle.css">
+        <link rel="icon" href="../../enk.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
+        <title>Emilia</title>
+    </head>
+    <body onselectstart="return false;" onmousedown="return false;">
+        <div id="tab" style="width: 150px; color: black;">Emilia</div>
+        <div id="cursor"></div>
+        <div id="border">
+            <div class="main">
+
+                <div class="flex">
+                    <div>
+                        <div class="name">Emilia</div>
+                        <div class="flex">
+                            <p class="border" style="border-right: none;">
+                                猛烈な追跡調査官
+                            </p>
+                            <p class="border" style="border-right: none;">██年 <span class="nul">2</span>月 
+                                <span class="nul">3</span>日生 (満 <span class="nul">25</span>歳)</p>
+                            <p class="border">性別 ██</p>
+                        </div>
+                        <div class="flex">
+                            <p class="border" style="width: 50%; border-right: none; margin-top: 0;">出身地 █████</p>
+                            <p class="border" style="margin-top: 0;">身長 <span class="nul">180</span>cm</p>
+                        </div>
+                    </div>
+                    <img id="emp" src="emilia.png" alt="">
+                </div>
+                
+                <div class="mainwtite">
+                    <p>几帳面で厳格な職員.目が見えていないことから暗いところで作業しがち.虚ろ目が原因で近寄りがたい印象を持つ.
+                        本人も他者との関わりを持つことを避けている.<br>
+                        <ruby>T-09-09<rt>テレジア</rt></ruby>でパニックを起こしてから仕事依存が悪化している.そこから度々幻聴の症状が出るようになった.
+                        <s>一見薄情に感じる態度だが不器用なだけでしばしば人を気に掛けている.</s><br>カフェイン中毒.甘党.ワーカホリック.
+                        </td>
+                    </p>
+                </div>
+                <div class="subwrite" style="border-top: none;">
+                    <div class="flex">
+                        <span>‣　</span>
+                        <span><a class="miho" href="../miho/miho.html">Miho</a>の無気力さに手を妬いている.しかし助けられることも多いので少し複雑.</span>
+                    </div>
+                    <div class="flex">
+                        <span>‣　</span>
+                        <span>パニックを起こした際<a class="mao" href="../mao/mao.html">Mao</a>に治療してもらったことがある.引きずって話題に出されるため苦手な人物でもある.</span>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <table border="1">
+                        <tr >
+                            <td style="border-right: solid 1px;">Security Team</td>
+                            <td style="border-right: solid 1px;">Regret</td>
+                            <td>Ⅰ</td>
+                        </tr>
+                        <tr>
+                            <td style="border-right: solid 1px;">Disciplinary Team</td>
+                            <td style="border-right: solid 1px;">Lamp + Hornet</td>
+                            <td>Ⅳ</td>
+                        </tr>
+                        <tr>
+                            <td style="border-right: solid 1px;">Extraction Team</td>
+                            <td style="border-right: solid 1px;">Justitia + Paradise Lost</td>
+                            <td>Ⅴ</td>
+                        </tr>
+                    </table>
+                    <p>　</p>
+                    <table border="1">
+                        <tr>
+                            <td style="border: solid 1px;">備考</td>
+                            <td>視覚障害<br>幻聴</td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <div class="subwrite">
+                    <div class="flex">
+                        <span>⚠　</span>
+                        <span>これ以上のエンケファリンの投与は認められません.</span>
+                    </div>
+                </div>
+                <br>
+                <div class="subwrite">
+                    <form name="EmpForm">
+                        <textarea name="tex" placeholder="sample voice!" cols="35" rows="3" style="font-family: 'Consolas','DotGothic16', sans-serif; 
+                        background-color: white; color: black; font-size: 14px;"></textarea>
+                        <input type="button" value="click!" onclick="voice()" style="cursor: url(../../cursor.png), auto; font-family: 'Consolas','DotGothic16', sans-serif; background-color: orange; color: white; padding: 10px;">
+                    </form><br>
+                    <form name="EmpForm2">
+                        <textarea name="tex2" placeholder="sample voice!" cols="35" rows="3" style="font-family: 'Consolas','DotGothic16', sans-serif; 
+                        background-color: white; color: black; font-size: 14px;"></textarea>
+                        <input type="button" value="click!" onclick="voice2()" style="cursor: url(../../cursor.png), auto; font-family: 'Consolas','DotGothic16', sans-serif; background-color: orange; color: white; padding: 10px;">
+                    </form>
+                </div>
+                <br>
+
+                <div class="flex">
+                    <details>
+                        <summary> EGO</summary>
+                        
+                            <div class="flex" style="border: 1px solid lightgrey; padding-right: 10px; background-color: rgba(211, 211, 211, 0.1);">
+                                <div id="ego"></div>
+                                    <div >
+                                        <br>
+                                        <div class="button" onclick="ego1()">Suit</div>
+                                        <div class="button" onclick="ego2()">Lamp</div>
+                                        <div class="button" onclick="ego3()">Justtitia　</div>
+                                        <br><br>
+                                        <div class="button" onclick="condition()">*gift</div>
+                                    </div>
+                            </div>
+                            <div id="test" style="color: rgb(41, 41, 41); "></div>
+                    </details>
+                </div>
+
+            </div>
+            <br>
+            <div>
+                <img src="p2.png" width="100" style="margin: 1px;">
+                <img src="p2.png" width="100" style="margin: 1px;">
+                <img src="p2.png" width="100" style="margin: 1px;">
+                　<img src="../../gif/EnkBtl.gif" width="50">
+                <img src="../../gif/EnkBtl.gif" width="50">
+                <img src="../../gif/EnkBox.gif" width="50">
+            </div>
+            
+
+            <div id="backpage">
+                <a class="emilia" href="../../emp.html">--Employees page</a>
+                <img src="emilia.gif" alt="">
+                <a href="../miho/miho.html"><img src="../miho/miho.gif" alt=""></a>
+                <a href="../asela/asela.html"><img src="../asela/asela.gif" alt=""></a>
+                <a href="../mao/mao.html"><img src="../mao/mao.gif" alt=""></a>
+                <a href="../diva/diva.html"><img src="../diva/diva.gif" alt=""></a>
+                </div>
+
+        </div>
+
+        <script src="../change.js"></script>
+        <script src="voice.js"></script>
+        <script src="../../particle/particle.js"></script>
+    </body>
+</html>
