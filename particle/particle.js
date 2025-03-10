@@ -4,19 +4,19 @@ const fileName = window.location.pathname.split('/').pop();
     let particleColor;
     switch (fileName) {
       case 'asela.html':
-        particleColor = 'rgb(175, 105, 255)';
+        particleColor = 'rgb(120, 0, 255)';
         break;
       case 'mao.html':
-        particleColor = 'rgb(255, 0, 221)';
+        particleColor = 'rgb(255, 0, 255)';
         break;
       case 'diva.html':
-        particleColor = 'rgb(27, 238, 245)'; 
+        particleColor = 'rgb(0, 255, 255)'; 
         break;
       case 'emilia.html':
         particleColor = 'lightgrey'; 
         break;
       case 'miho.html':
-        particleColor = 'rgb(0, 255, 85)'; 
+        particleColor = 'rgb(0, 255, 80)'; 
         break;
       default:
         particleColor = 'white'; 
