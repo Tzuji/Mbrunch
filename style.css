@@ -33,6 +33,8 @@ body{
     margin-right: 1em;
     border: white solid 1px;
     overflow-y: scroll;
+    position: relative;
+    z-index: 20;
     
     &::-webkit-scrollbar {
         width: 10px;
@@ -43,9 +45,6 @@ body{
         border: 3px groove black;
         background-size: cover;
     }
-
-    position: relative;
-    z-index: 20;
 }
 .Other{
     background: black;
@@ -80,7 +79,6 @@ body{
 }
 .tab{
     padding: 0.5em;
-    background-color: black;
     border: white solid 1px;
     border-top-right-radius: 20px;
     margin-right: 5px;
@@ -95,20 +93,22 @@ body{
     &:hover{
         position: relative;
         top: 1px;
+        background: black;
     }
 }
 .nowtab{
     padding: 0.5em;
     background-color: black;
     border: white solid 1px;
+    border-bottom: black;
     border-top-right-radius: 20px;
     margin-right: 5px;
     text-decoration: none;
 
     position: relative;
-    top: 1px;
+    top: 2px;
     z-index: 30;
-    border-bottom: black;
+    
 }
 .topbar:link {
 color: white;
