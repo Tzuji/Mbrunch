@@ -14,7 +14,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
         <title>Asela</title>
     </head>
-    <body onselectstart="return false;" onmousedown="return false;">
+    <body>
         <div id="tab" style="width: 150px; color: black;">Asela</div>
         <div id="cursor"></div>
 
@@ -35,7 +35,7 @@
                             <p class="border" style="margin-top: 0;">身長 <span class="nul">185</span>cm</p>
                         </div>
                     </div>
-                    <img id="emp" src="asela.png" alt="">
+                    <img id="emp" src="asela.png" alt="asela"  oncontextmenu="return false;" onmousedown="return false;">
                 </div>
                 
                 <div class="mainwtite">
@@ -64,7 +64,7 @@
                         </tr>
                         <tr>
                             <td style="border-right: solid 1px;">Central Team</td>
-                            <td style="border-right: solid 1px;">Magic Bullet +<br>The Sword Sharpened with Tears</td>
+                            <td style="border-right: solid 1px;">Magic Bullet + The Sword Sharpened with Tears</td>
                             <td>Ⅳ</td>
                         </tr>
                         <tr>
@@ -89,36 +89,36 @@
                         </div>
                     </div>
                     <br>
-                    <div class="subwrite">
-                        <form name="EmpForm">
-                            <textarea name="tex" placeholder="sample voice!" cols="35" rows="3" style="font-family: 'Consolas','DotGothic16', sans-serif; 
-                            background-color: white; color: black; font-size: 14px;"></textarea>
-                            <input type="button" value="click!" onclick="voice()" style="cursor: url(../../cursor.png), auto;font-family: 'Consolas','DotGothic16', sans-serif; background-color: orange; color: white; padding: 10px;">
-                        </form><br>
-                        <form name="EmpForm2">
-                            <textarea name="tex2" placeholder="sample voice!" cols="35" rows="3" style="font-family: 'Consolas','DotGothic16', sans-serif; 
-                            background-color: white; color: black; font-size: 14px;"></textarea>
-                            <input type="button" value="click!" onclick="voice2()" style="cursor: url(../../cursor.png), auto; font-family: 'Consolas','DotGothic16', sans-serif; background-color: orange; color: white; padding: 10px;">
-                        </form>
+                    <div class="flex">
+                        
                     </div>
                     <br>
 
                     <div class="flex">
-                        <details>
-                            <summary> EGO</summary>
-                            <!--EGO着せ替え、誤字見落としで二日悩んだので悔しい-->
-                                <div class="flex" style="border: 1px solid rgb(120, 0, 255); padding-right: 10px; background-color: rgb(175, 105, 255,0.1);">
-                                    <div id="ego"></div>
-                                        <div >
-                                            <br>
-                                            <div class="button" onclick="ego1()">Suit</div>
-                                            <div class="button" onclick="ego2()">Magic Bullet</div>
-                                            <div class="button" onclick="ego3()">Twilight</div>
-                                            <br><br>
-                                            <div class="button" onclick="condition()">*gift</div>
-                                        </div>
-                                </div>
-                        </details>
+                        <div>
+                            ▼ sound only🔊<br>
+                            <table border="1" style="margin-bottom: 0.2em;"><th style="width: 125px; font-size: 11px;" id="voiceNum">--</th><th style="width: 102px;">███/██/██
+                            </th>
+                            </table>      
+                            <div id="voice" style=" font-size: 11px; width: 210px;"><span style="color: rgb(75, 75, 75);">sample voice</span></div>
+                            <div class="button" onclick="voice()">next-></div>
+                        </div>
+                        　　
+                        
+                        <div>
+                            ▼ EGO
+                            <div class="flex" style="border: 1px solid rgb(120, 0, 255); padding-right: 10px; background-color: rgb(175, 105, 255,0.1);">
+                                <div id="ego"></div>
+                                    <div >
+                                        <br>
+                                        <div class="button" onclick="ego1()">Suit</div>
+                                        <div class="button" onclick="ego2()">Magic Bullet</div>
+                                        <div class="button" onclick="ego3()">Twilight</div>
+                                        <br><br>
+                                        <div class="button" onclick="condition()">*gift</div>
+                                    </div>
+                            </div>
+                        </div>
                     </div>
                     
             </div>
