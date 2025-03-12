@@ -4,13 +4,15 @@ let count = 1 , text;
 
 function typeing(){
     if(typeText.innerHTML == 0){
-        text = "Welcome to M-███ brunch~ ^^/";
+        text = "Welcome to M-███ branch~ ^^/";
     }else if(typeText.innerHTML == 1){
         text = "🥩 My Employees 🥩"
     }else if(typeText.innerHTML == 2){
         text = "Records :)"
     }else if(typeText.innerHTML == 3){
-        text = "📨"
+        text = "いろいろ！"
+    }else if(typeText.innerHTML == 4){
+        text = ""
     }
 
     typeText.textContent = text.slice(0,count);
